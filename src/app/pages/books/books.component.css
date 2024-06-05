@@ -1,0 +1,61 @@
+
+.contenedor-libros{
+    width: 100%;
+    height: 700px;
+    background: url('../../../assets/imgs/fondoPelis.jpg') center center ;
+    background-size: cover;
+    object-fit: contain;
+    color: white;
+}
+
+.cont-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+}
+.txt{
+    background-color: rgba(1, 1, 1, 0.397);
+    margin: 20px 110px 20px 110px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.books{
+    padding: 25px;
+    text-shadow: 0 0 5px rgb(21, 212, 226);
+}
+
+/*saga hp*/
+.cont-saga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(8, 86, 125), rgb(0, 0, 0));
+    padding: 15px;
+    text-shadow: 0 0 6px rgb(47, 99, 117);
+}
+.Hp{
+    color: rgb(39, 88, 163);
+}
+
+
+/* table */
+.contenedor-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.cont-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}

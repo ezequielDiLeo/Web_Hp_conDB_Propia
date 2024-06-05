@@ -1,0 +1,42 @@
+
+
+<div class="contenedor-libros">
+    <div class="cont-title">
+        <h1 class="books">Our Books</h1>
+        <p class="txt"> Las queridas novelas de Harry Potter de Rowling cobraron vida en la pantalla en ocho películas taquilleras y continuaron inspirando la serie de películas Fantastic Beasts, llevándonos a una nueva era del Mundo Mágico.</p>
+    </div>
+
+    <div class="cont-saga">
+        <h1>Saga <span class="Hp">Hp</span></h1>
+    </div>
+
+    <div class="contenedor-details">
+
+        <div class="cont-table">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Libro</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                    @for (book of bookList; track $index) {
+                        <tr>
+                            <td>{{book.title}}</td>
+                            <td>{{book.author}}</td>
+                            <td>{{book.publication_date}}</td>
+                            <td><button type="button" class="btn btn-outline-primary" (click)="navigate(book._id)">Detalles</button></td>
+                            
+                        </tr>
+                    }
+        
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</div>
